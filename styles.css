@@ -1,0 +1,48 @@
+/* Estilos para a página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://comunidade-auvp-prod.s3.us-east-1.amazonaws.com/monthly_2024_03/1Vv.gif.3b296640862fb62186e57caffd66fd57.gif'); /* Caminho da imagem */
+    background-size: cover; /* A imagem vai cobrir toda a tela */
+    background-position: center; /* A imagem será centralizada */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    position: relative;
+}
+
+#message-container {
+    text-align: center;
+}
+
+#message {
+    font-size: 3em;
+    color: #ff0000;
+    animation: blink 1s step-start 0s infinite;
+}
+
+/* Animação de piscar */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Estilos do botão */
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: absolute; /* Tornando o botão com posição absoluta */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
